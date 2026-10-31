@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.sec1 {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    margin: 0 auto;
+    gap: 30px;
+    .left {
+        background-color: #1a1a1a;
+        width: 63%;
+        border-radius: 1rem;
+        border: none;
+        height: 54vh;
+        .ob {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 100%;
+            background-color: #1a1a1a;
+            border-radius: 1rem;
+            height: 44vh;
+            .verh {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 97%;
+                height: 8vh;
+                background-color: #1a1a1a;
+                border-radius: 1rem;
+                h1 {
+                    color: #f9efec;
+                    font-size: 3.5rem;
+                    width: 32vw;
+                    background-color: #1a1a1a;
+                    font-weight: 600;
+                    letter-spacing: 4px;
+                }
+                .or {
+                    display: flex;
+                    align-items: center;
+                    background-color: #1a1a1a;
+                    width: 20vw;
+                    img {
+                        background-color: #1a1a1a;
+                        width: 27%;
+                        height: auto;
+                    }
+                    p {
+                        color: #ce7d63;
+                        font-size: 1.5rem;
+                        background-color: #1a1a1a;
+                        text-align: justify;
+                    }
+                }
+            }
+            .niz {
+                display: flex;
+                justify-content: center;
+                width: 64%;
+                background-color: #1a1a1a;
+                height: 5vh;
+                h2 {
+                    color: #f9efec;
+                    font-size: 3.5rem;
+                    height: 10vh;
+                    background-color: #1a1a1a;
+                    font-weight: 600;
+                    letter-spacing: 4px;
+                    width: 32vw;
+                }
+            }
+            .pp {
+                color: #676665;
+                font-size: 1.2rem;
+                width: 53vw;
+                margin: 0 auto;
+                background-color: #1a1a1a;
+            }
+        }
+        .sliderContainer {
+            width: 97%;
+            overflow: hidden;
+            background-color: #0f0f0f;
+            height: 5vh;
+            display: flex;
+            border-radius: 0.5rem;
+            margin: 0 auto;
+            .sliderTrack {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                animation: scroll 20s linear infinite;
+                width: max-content;
+                background-color: #0f0f0f;
+                &:hover {
+                    animation-play-state: paused;
+                }
+                .sliderItem {
+                    display: flex;
+                    align-items: center;
+                    gap: 2rem;
+                    color: #676665;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    white-space: nowrap;
+                    background-color: #0f0f0f;
+                    text-transform: uppercase;
+                }
+                @keyframes scroll {
+                    0% {
+                        transform: translateX(-33.33%);
+                    }
+                    100% {
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+    }
+    .right {
+        background-image: url('../assets/pg2.png');
+        width: 34vw;
+        height: 54vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 1rem;
+        border: none;
+        .phot {
+            background: transparent;
+            display: flex;
+            align-items: flex-end;
+            height: 51vh;
+            width: 32vw;
+            justify-content: space-between;
+            .ss {
+                background: transparent;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 10vw;
+                button {
+                    width: 3vw;
+                    height: 5.1vh;
+                    border-radius: 2rem;
+                    border: none;
+                }
+                p {
+                    background: transparent;
+                    color: #ffffff;
+                    font-size: 1.1rem;
+                    text-transform: uppercase;
+                }
+            }
+            .ww {
+                background-color: #ffffff31;
+                width: 11vw;
+                height: 5vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                border-radius: 0.8rem;
+                p {
+                    background: transparent;
+                    color: #ffffff;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+.sec4 {
+    width: 100%;
+    height: 150vh;
+
+    .servicesContainer {
+        width: 95%;
+        background-color: #0f0f0f;
+        border-radius: 1rem;
+        border: 2px solid #1a1a1a;
+        height: 140vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+
+        .servicesHeader {
+            width: 97%;
+            height: 10vh;
+            border-radius: 1rem;
+            background-color: #1a1a1a;
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+
+            .serv {
+                color: #f9efec;
+                background-color: #1a1a1a;
+                text-align: center;
+                width: 16vw;
+                font-size: 2.5rem;
+                font-weight: 500;
+            }
+        }
+
+        .mainGridWrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 97%;
+            height: 125vh;
+            margin: 0 auto;
+
+            .servicesGrid {
+                width: 44.5vw;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: space-between;
+
+                .serviceCard {
+                    width: 100%;
+                    height: 29vh;
+                    background-color: #1a1a1a;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    border-radius: 1rem;
+
+                    .book {
+                        display: flex;
+                        background-color: #1a1a1a;
+                        align-items: center;
+                        width: 89%;
+                        justify-content: space-between;
+                        margin: 0 auto;
+                        gap: 30px;
+
+                        .serviceslearn1 {
+                            display: flex;
+                            background-color: #1a1a1a;
+                            align-items: center;
+                            gap: 10px;
+
+                            .serviceIcon {
+                                background-color: #1a1a1a;
+                                width: 3.5vw;
+                                height: 5.5vh;
+                                border: 1px solid #e7beb12f;
+                                display: flex;
+                                justify-content: center;
+                                border-radius: 0.8rem;
+                                align-items: center;
+
+                                img {
+                                    background-color: #1a1a1a;
+                                    width: 61%;
+                                    height: 75%;
+                                }
+                            }
+
+                            .serviceTitle {
+                                background-color: #1a1a1a;
+                                font-size: 1.7rem;
+                                color: #f9efec;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .servicelearn {
+                            display: flex;
+                            background-color: #1a1a1a;
+                            align-items: center;
+                            gap: 6px;
+
+                            button {
+                                width: 3vw;
+                                height: 5.2vh;
+                                border-radius: 2rem;
+                                border: 1px solid #e7beb12f;
+                                background-color: #1a1a1a;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                cursor: pointer;
+
+                                img {
+                                    width: 40%;
+                                    height: 40%;
+                                    object-fit: contain;
+                                }
+                            }
+
+                            .serviceButton {
+                                background-color: #1a1a1a;
+                                font-size: 1.2rem;
+                                color: #b3b3b2;
+                            }
+                        }
+                    }
+
+                    .serviceDescription {
+                        background-color: #1a1a1a;
+                        color: #b3b3b2;
+                        font-size: 1.1rem;
+                        width: 89%;
+                        margin: 0 auto;
+                    }
+
+                    .servicePrice {
+                        background-color: #1a1a1a;
+                        color: #f9efec;
+                        font-size: 1.4rem;
+                        text-align: right;
+                        width: 89%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+
+            .projectsContainer {
+                width: 44.5vw;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: space-between;
+
+                .projectsRow {
+                    width: 100%;
+                    height: 29vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    background-color: #1a1a1a;
+                    border-radius: 1rem;
+                    border: 2px solid #1a1a1a;
+                    .rowHeader {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+                        height: 5vh;
+                        background-color: #1a1a1a;
+                        .rowTitle {
+                            font-size: 1.2rem;
+                            color: #b3b3b2;
+                            font-weight: 500;
+                            background-color: #1a1a1a;
+                        }
+
+                        .viewAllBlock {
+                            display: flex;
+                            align-items: center;
+                            gap: 6px;
+                            background-color: #1a1a1a;
+                            .rowArrow {
+                                width: 2.2vw;
+                                height: 3.8vh;
+                                border-radius: 2rem;
+                                border: 1px solid #e7beb12f;
+                                background-color: transparent;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                cursor: pointer;
+                                background-color: #1a1a1a;
+                                img {
+                                    width: 40%;
+                                    height: 40%;
+                                    object-fit: contain;
+                                    background-color: #1a1a1a;
+                                }
+                            }
+
+                            .viewAllText {
+                                font-size: 1rem;
+                                color: #b3b3b2;
+                                background-color: #1a1a1a;
+                            }
+                        }
+                    }
+
+                    .imagesGrid {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        height: 22vh;
+                        background-color: #1a1a1a;
+                        .projectImageWrapper {
+                            position: relative;
+                            width: 21.5vw;
+                            height: 100%;
+                            border-radius: 1rem;
+                            overflow: hidden;
+                            background-color: #1a1a1a;
+                            .projectImg {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                background-color: #1a1a1a;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.successStoriesSection {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+
+	.sectionHeader {
+		width: 95%;
+		height: 14vh;
+		border-radius: 1rem;
+		background-color: #1a1a1a;
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
+
+		.sectionTitle {
+			color: #f9efec;
+			background-color: #1a1a1a;
+			text-align: center;
+			width: 24vw;
+			font-size: 2.5rem;
+			font-weight: 500;
+		}
+
+		.viewAllBlock {
+			display: flex;
+			background-color: #1a1a1a;
+			align-items: center;
+			gap: 6px;
+			margin-left: auto;
+			margin-right: 2vw;
+
+			.viewAllArrow {
+				width: 3vw;
+				height: 5.2vh;
+				border-radius: 2rem;
+				border: 1px solid #e7beb12f;
+				background-color: #1a1a1a;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+
+				img {
+					background-color: #1a1a1a;
+					width: 40%;
+					height: 40%;
+					object-fit: contain;
+				}
+			}
+
+			.viewAllText {
+				background-color: #1a1a1a;
+				font-size: 1.2rem;
+				color: #b3b3b2;
+			}
+		}
+	}
+
+	.storiesContainer {
+		width: 95%;
+		background-color: #0f0f0f;
+		border-radius: 1rem;
+		border: 2px solid #1a1a1a;
+		height: 71vh;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-direction: column;
+		margin: 0 auto;
+
+		.storyRow {
+			width: 97%;
+			height: 55vh;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #0f0f0f;
+			margin: 0 auto;
+
+			.leftInfoCard {
+				width: 44.5vw;
+				height: 28vh;
+				background-color: #1a1a1a;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				border-radius: 1rem;
+
+				.cardTopRow {
+					display: flex;
+					background-color: #1a1a1a;
+					align-items: center;
+					width: 89%;
+					justify-content: space-between;
+					margin: 0 auto;
+					gap: 30px;
+
+					.titleWrapper {
+						display: flex;
+						background-color: #1a1a1a;
+						align-items: center;
+						gap: 15px;
+
+						.storyIcon {
+							background-color: #141414;
+							width: 4.5vw;
+							height: 7.5vh;
+							border: 1px solid #e7beb12f;
+							display: flex;
+							justify-content: center;
+							border-radius: 0.8rem;
+							align-items: center;
+
+							img {
+								background-color: transparent;
+								width: 50%;
+								height: 50%;
+								object-fit: contain;
+							}
+						}
+
+						.storyTitle {
+							background-color: #1a1a1a;
+							font-size: 2rem;
+							color: #f9efec;
+							font-weight: 500;
+						}
+					}
+
+					.visitLinkWrapper {
+						display: flex;
+						background-color: #1a1a1a;
+						align-items: center;
+						gap: 8px;
+
+						.linkArrow {
+							width: 3vw;
+							height: 5.2vh;
+							border-radius: 2rem;
+							border: 1px solid #e7beb12f;
+							background-color: #1a1a1a;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							cursor: pointer;
+
+							img {
+								background-color: #1a1a1a;
+								width: 40%;
+								height: 40%;
+								object-fit: contain;
+							}
+						}
+
+						.visitLink {
+							background-color: #1a1a1a;
+							font-size: 1.2rem;
+							color: #b3b3b2;
+							text-decoration: none;
+							font-weight: 500;
+						}
+					}
+				}
+
+				.metaBadgesWrapper {
+					display: flex;
+					background-color: #1a1a1a;
+					align-items: center;
+					width: 89%;
+					margin: 0 auto;
+					gap: 10px;
+
+					.metaBadge {
+						display: flex;
+						align-items: center;
+						background-color: #1F1F1F;
+						border: 1px solid #e7beb12f;
+						border-radius: 2rem;
+						height: 5vh;
+						width: auto;
+						justify-content: center;
+
+						.badgeLabel {
+							background-color: transparent;
+							color: #666666;
+							font-size: 0.95rem;
+							text-indent: 1vw;
+						}
+
+						.badgeValue {
+							background-color: transparent;
+							color: #e4e4e3;
+							font-size: 0.95rem;
+							font-weight: 500;
+							text-indent: 0.4vw;
+							margin-right: 1vw;
+						}
+					}
+				}
+			}
+
+			.rightContentCard {
+				width: 44.5vw;
+				height: 28vh;
+				background-color: #0f0f0f; 
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+
+				.tabsHeader {
+					display: flex;
+					background-color: #0f0f0f; 
+					align-items: center;
+					width: 100%;
+					height: 7vh;
+					justify-content: flex-start;
+					gap: 1vw;
+
+					.tabButton {
+						width: 9vw;
+						height: 5.5vh;
+						background-color: #141414; 
+						border: 1px solid #1a1a1a;
+						color: #b3b3b2;
+						font-size: 0.85rem;
+						font-weight: 600;
+						cursor: pointer;
+						border-radius: 0.6rem;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						transition: all 0.2s ease;
+
+						&.activeTab {
+							background-color: #e25b38; 
+							border-color: #e25b38;
+							color: #ffffff;
+						}
+					}
+				}
+
+				.tabContentBody {
+					display: flex;
+					flex-direction: column;
+					background-color: #1a1a1a; 
+					border: 1px solid #1a1a1a;
+					border-radius: 1rem;
+					width: 100%;
+					height: 18vh;
+					justify-content: space-evenly;
+
+					.contentHeading {
+						background-color: #1a1a1a;
+						font-size: 2.2rem;
+						color: #f9efec;
+						font-weight: 500;
+						text-indent: 2vw;
+					}
+
+					.contentText {
+						background-color: #1a1a1a;
+						color: #b3b3b2;
+						font-size: 1.1rem;
+						line-height: 1.6;
+						width: 92%;
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+

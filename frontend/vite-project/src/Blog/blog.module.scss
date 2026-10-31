@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f;
+    font-family: 'Roboto Flex', sans-serif;
+}
+.blogsSection {
+	width: 100%;
+	height: 126vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+
+	.sectionHeader {
+		width: 95%;
+		height: 10vh;
+		border-radius: 1rem;
+		background-color: #1a1a1a;
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
+
+		.sectionTitle {
+			color: #f9efec;
+			background-color: #1a1a1a;
+			text-indent: 2vw;
+			font-size: 2.5rem;
+			font-weight: 500;
+		}
+
+		.tabsHeader {
+			display: flex;
+			background-color: #1a1a1a;
+			align-items: center;
+			gap: 1vw;
+			margin-left: auto;
+			margin-right: 2vw;
+
+			.tabButton {
+				width: 9vw;
+				height: 5.5vh;
+				background-color: #141414;
+				border: 1px solid #1a1a1a;
+				color: #b3b3b2;
+				font-size: 0.85rem;
+				font-weight: 600;
+				cursor: pointer;
+				border-radius: 0.6rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				transition: all 0.2s ease;
+
+				&.activeTab {
+					background-color: #e25b38;
+					border-color: #e25b38;
+					color: #ffffff;
+				}
+			}
+		}
+	}
+
+	.blogsContainer {
+		width: 95%;
+		background-color: #0f0f0f;
+		border-radius: 1rem;
+		border: 2px solid #1a1a1a;
+		height: 108vh;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-direction: column;
+		margin: 0 auto;
+
+		.featuredRow {
+			width: 97%;
+			height: 38vh;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #0f0f0f;
+			margin: 0 auto;
+
+			.featuredImageBlock {
+				width: 27.5vw;
+				height: 38vh;
+				border-radius: 1rem;
+				overflow: hidden;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+
+			.featuredContentCard {
+				width: 63.5vw;
+				height: 38vh;
+				background-color: #1a1a1a;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				border-radius: 1rem;
+
+				.featuredTitle {
+					background-color: #1a1a1a;
+					font-size: 2.2rem;
+					color: #f9efec;
+					font-weight: 500;
+					text-indent: 2vw;
+				}
+
+				.metaBadgesWrapper {
+					display: flex;
+					background-color: #1a1a1a;
+					align-items: center;
+					width: 92%;
+					margin: 0 auto;
+					gap: 10px;
+
+					.metaBadge {
+						display: flex;
+						align-items: center;
+						background-color: #141414;
+						border: 1px solid #e7beb12f;
+						border-radius: 2rem;
+						height: 4.5vh;
+						width: auto;
+						justify-content: center;
+
+						.badgeLabel {
+							background-color: transparent;
+							color: #666666;
+							font-size: 0.9rem;
+							text-indent: 1vw;
+						}
+
+						.badgeValue {
+							background-color: transparent;
+							color: #e4e4e3;
+							font-size: 0.9rem;
+							font-weight: 500;
+							text-indent: 0.4vw;
+							margin-right: 1vw;
+						}
+					}
+				}
+
+				.featuredDescription {
+					background-color: #1a1a1a;
+					color: #b3b3b2;
+					font-size: 1.05rem;
+					line-height: 1.6;
+					width: 92%;
+					margin: 0 auto;
+				}
+
+				.cardFooterRow {
+					display: flex;
+					background-color: #1a1a1a;
+					align-items: center;
+					width: 92%;
+					justify-content: space-between;
+					margin: 0 auto;
+
+					.readLinkWrapper {
+						display: flex;
+						background-color: #1a1a1a;
+						align-items: center;
+						gap: 8px;
+
+						.linkArrow {
+							width: 3vw;
+							height: 5.2vh;
+							border-radius: 2rem;
+							border: 1px solid #e7beb12f;
+							background-color: #1a1a1a;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							cursor: pointer;
+
+							img {
+								background-color: #1a1a1a;
+								width: 40%;
+								height: 40%;
+								object-fit: contain;
+							}
+						}
+
+						.readLink {
+							background-color: #1a1a1a;
+							font-size: 1.1rem;
+							color: #b3b3b2;
+						}
+					}
+
+					.dateBlock {
+						display: flex;
+						background-color: #1a1a1a;
+						align-items: center;
+						gap: 6px;
+
+						.dateLabel {
+							background-color: transparent;
+							color: #666666;
+							font-size: 1.1rem;
+						}
+
+						.dateValue {
+							background-color: transparent;
+							color: #f9efec;
+							font-size: 1.1rem;
+							font-weight: 500;
+						}
+					}
+				}
+			}
+		}
+
+		.blogsGrid {
+			width: 97%;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 30px;
+			justify-content: space-between;
+			align-items: center;
+			margin: 0 auto;
+
+			.blogCard {
+				width: 29vw;
+				height: 57vh;
+				background-color: #1a1a1a;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				border-radius: 1rem;
+
+				.cardImageBlock {
+					width: 90%;
+					height: 28vh;
+					border-radius: 0.8rem;
+					overflow: hidden;
+					margin: 0 auto;
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+
+				.cardTitle {
+					background-color: #1a1a1a;
+					font-size: 1.4rem;
+					color: #f9efec;
+					font-weight: 500;
+					width: 90%;
+					margin: 0 auto;
+				}
+
+				.cardText {
+					background-color: #1a1a1a;
+					color: #b3b3b2;
+					font-size: 1.05rem;
+					line-height: 1.5;
+					width: 90%;
+					margin: 0 auto;
+				}
+
+				.cardFooterWrapper {
+					display: flex;
+					background-color: #1a1a1a;
+					align-items: center;
+					width: 90%;
+					margin: 0 auto;
+					gap: 8px;
+
+					.linkArrow {
+						width: 3vw;
+						height: 5.2vh;
+						border-radius: 2rem;
+						border: 1px solid #e7beb12f;
+						background-color: #1a1a1a;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						cursor: pointer;
+
+						img {
+							background-color: #1a1a1a;
+							width: 40%;
+							height: 40%;
+							object-fit: contain;
+						}
+					}
+
+					.readLink {
+						background-color: #1a1a1a;
+						font-size: 1.1rem;
+						color: #b3b3b2;
+					}
+				}
+			}
+		}
+	}
+}

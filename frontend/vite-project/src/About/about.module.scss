@@ -1,0 +1,351 @@
+.page {
+	width: 95%;
+	margin: 0 auto;
+	color: #f9efec;
+
+	.hero {
+		width: 100%;
+		height: 27vh;
+		display: flex;
+		gap: 1vw;
+
+		.heroCopy,
+		.statsPanel {
+			background-color: #1a1a1a;
+			border-radius: 1rem;
+		}
+
+		.heroCopy {
+			width: 68%;
+			padding: 2vw;
+		display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			h1 {
+				margin: 0;
+				color: #f9efec;
+				font-size: 3.5rem;
+				font-weight: 600;
+				letter-spacing: 0.1rem;
+				background-color: #1a1a1a;
+			}
+		}
+
+		.heroSecondLine {
+			display: flex;
+			align-items: center;
+			gap: 1vw;
+			background-color: #1a1a1a;
+		}
+
+		.statsPanel {
+			width: 32%;
+			padding: 1vw;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+	}
+
+	.projectLink,
+	.knowMore,
+	.viewAll {
+		display: flex;
+		align-items: center;
+		gap: 0.5vw;
+		color: #ce7d63;
+		font-size: 0.7rem;
+		text-decoration: none;
+		white-space: nowrap;
+		background-color: transparent;
+	}
+
+	.arrowCircle {
+		width: 2.4vw;
+		height: 2.4vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid #ce7d63;
+		border-radius: 50%;
+		color: #ce7d63;
+		font-size: 1rem;
+		background-color: #1a1a1a;
+	}
+
+	.statsGrid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0.5vw;
+		background-color: transparent;
+
+		article {
+			min-height: 8vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background-color: #202020;
+			border-radius: 0.5rem;
+		}
+
+		p {
+			margin: 0 0 0.4vh;
+			color: #b3b3b2;
+			font-size: 0.55rem;
+			background-color: #202020;
+		}
+
+		span {
+			color: #ce927d;
+			font-size: 1.8rem;
+			font-weight: 600;
+			background-color: #202020;
+		}
+	}
+
+	.knowMore {
+		align-self: center;
+		color: #b3b3b2;
+		font-size: 0.65rem;
+
+		span {
+			width: 1.6vw;
+			height: 1.6vw;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 1px solid #ffffff20;
+			border-radius: 50%;
+			color: #b3b3b2;
+			font-size: 0.8rem;
+			background-color: #1a1a1a;
+		}
+	}
+
+	.teamSection,
+	.achievements,
+	.awards {
+		margin-top: 5vh;
+		padding: 0.5vw;
+		border: 1px solid #ffffff16;
+		border-radius: 1rem;
+		background-color: #111111;
+	}
+
+	.sectionTitle {
+		min-height: 7vh;
+		margin: 0 0 1vh;
+		padding: 1.5vw;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		color: #f9efec;
+		font-size: 1.5rem;
+		font-weight: 600;
+		background-color: #1a1a1a;
+		border-radius: 0.75rem;
+
+		h2 {
+			margin: 0;
+			font-size: 1.5rem;
+			font-weight: 600;
+			background-color: #1a1a1a;
+		}
+	}
+
+	.viewAll {
+		color: #b3b3b2;
+		font-size: 0.6rem;
+
+		span {
+			width: 1.5vw;
+			height: 1.5vw;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 1px solid #ffffff20;
+			border-radius: 50%;
+			font-size: 0.75rem;
+		}
+	}
+
+	.teamGrid,
+	.achievementGrid,
+	.awardGrid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 0.7vw;
+		background-color: transparent;
+	}
+
+	.teamCard {
+		padding: 1vw;
+		background-color: #1a1a1a;
+		border-radius: 0.75rem;
+
+		.memberInfo {
+			min-height: 5vh;
+			text-align: center;
+			background-color: #1a1a1a;
+		}
+
+		h3 {
+			margin: 0 0 0.3vh;
+			font-size: 0.75rem;
+			font-weight: 600;
+			background-color: #1a1a1a;
+		}
+
+		p {
+			margin: 0;
+			color: #b3b3b2;
+			font-size: 0.58rem;
+			background-color: #1a1a1a;
+		}
+	}
+
+	.memberPhoto {
+		width: 100%;
+		height: 7vw;
+		overflow: hidden;
+		background-color: #e7beb1;
+		border-radius: 0.4rem;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			object-position: center bottom;
+			background-color: #e7beb1;
+		}
+	}
+
+	.socialLinks {
+		margin-top: 0.8vh;
+		display: flex;
+		justify-content: center;
+		gap: 0.5vw;
+		background-color: #1a1a1a;
+
+		a {
+			width: 1.5vw;
+			height: 1.5vw;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #e7beb1;
+			font-size: 0.6rem;
+			text-decoration: none;
+			background-color: #252322;
+			border-radius: 50%;
+
+			img {
+				width: 55%;
+				height: 55%;
+				object-fit: contain;
+				background-color: transparent;
+			}
+		}
+	}
+
+	.achievements,
+	.awards {
+		.sectionTitle {
+			justify-content: flex-start;
+		}
+	}
+
+	.achievementCard,
+	.awardCard {
+		min-height: 17vh;
+		display: flex;
+		flex-direction: column;
+		background-color: #1a1a1a;
+		border-radius: 0.6rem;
+		overflow: hidden;
+
+		.date {
+			margin: 0;
+			padding: 0.7vw;
+			color: #777674;
+			font-size: 0.6rem;
+			background-color: #202020;
+		}
+
+		h3 {
+			margin: 0 0 1vh;
+			color: #f9efec;
+			font-size: 0.72rem;
+			font-weight: 600;
+			line-height: 1.4;
+			background-color: #1a1a1a;
+		}
+
+		> div:last-child,
+		> p:last-child {
+			margin: 0;
+			padding: 1vw;
+			color: #b3b3b2;
+			font-size: 0.62rem;
+			line-height: 1.5;
+			background-color: #1a1a1a;
+		}
+	}
+
+	.achievementCard {
+		.date + div {
+			padding: 1vw;
+			background-color: #1a1a1a;
+		}
+	}
+
+	.awards {
+		margin-bottom: 5vh;
+	}
+
+	.awardCard {
+		padding-bottom: 1vw;
+
+		.awardDate {
+			padding: 0.7vw;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background-color: #1a1a1a;
+
+			p {
+				margin: 0;
+				color: #b3b3b2;
+				font-size: 0.6rem;
+				background-color: #1a1a1a;
+			}
+
+			span {
+				width: 1.7vw;
+				height: 1.7vw;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: #ce7d63;
+				font-size: 0.9rem;
+				background-color: #252322;
+				border-radius: 0.4rem;
+
+				img {
+					width: 55%;
+					height: 55%;
+					object-fit: contain;
+					background-color: transparent;
+				}
+			}
+		}
+
+		h3,
+		> p {
+			margin-right: 1vw;
+			margin-left: 1vw;
+		}
+	}
+}

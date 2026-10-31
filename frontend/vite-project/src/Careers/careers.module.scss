@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f;
+    font-family: 'Roboto Flex', sans-serif;
+}
+.sec1 {
+	width: 95%;
+	display: flex;
+	align-items: center;
+	height: 60vh;
+	margin: 0 auto;
+	gap: 30px;
+
+	.left {
+		background-color: #1a1a1a;
+		width: 63%;
+		border-radius: 1rem;
+		border: none;
+		height: 54vh;
+		display: flex;
+		align-items: center;
+
+		.ob {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			width: 100%;
+			background-color: #1a1a1a;
+			border-radius: 1rem;
+			height: 44vh;
+
+			.verh {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				width: 93%;
+				height: auto;
+				background-color: #1a1a1a;
+				border-radius: 1rem;
+				margin: 0 auto;
+				gap: 20px;
+
+				h1 {
+					color: #f9efec;
+					font-size: 3.5rem;
+					width: 36vw;
+					background-color: #1a1a1a;
+					font-weight: 600;
+					letter-spacing: 2px;
+					line-height: 1.2;
+				}
+
+				.or {
+					display: flex;
+					align-items: center;
+					background-color: #1a1a1a;
+					width: 16vw;
+					gap: 10px;
+
+					img {
+						background-color: #1a1a1a;
+						width: 3vw;
+						height: 5.2vh;
+						border-radius: 2rem;
+						border: 1px solid #e7beb12f;
+					}
+
+					p {
+						color: #ce7d63;
+						font-size: 1.2rem;
+						background-color: #1a1a1a;
+						font-weight: 500;
+					}
+				}
+			}
+		}
+	}
+
+	.right {
+		width: 34%;
+		height: 54vh;
+		background-color: #1a1a1a;
+		border-radius: 1rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+		.metaBlock {
+			display: flex;
+			flex-direction: column;
+			background-color: #1a1a1a;
+			width: 88%;
+			margin: 0 auto;
+			gap: 1.5vh;
+
+			.brandTitle {
+				background-color: #1a1a1a;
+				color: #f9efec;
+				font-size: 1.5rem;
+				font-weight: 500;
+			}
+
+			.brandText {
+				background-color: #1a1a1a;
+				color: #b3b3b2;
+				font-size: 0.95rem;
+				line-height: 1.6;
+				font-weight: 400;
+			}
+		}
+
+		.actionBlock {
+			display: flex;
+			background-color: #1a1a1a;
+			align-items: center;
+			width: 88%;
+			margin: 0 auto;
+			gap: 10px;
+
+			.knowMoreBtn {
+				width: 3vw;
+				height: 5.2vh;
+				border-radius: 2rem;
+				border: 1px solid #e7beb12f;
+				background-color: #1a1a1a;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+
+				img {
+					width: 40%;
+					height: 40%;
+					object-fit: contain;
+					background-color: transparent;
+				}
+			}
+
+			.knowMoreText {
+				background-color: #1a1a1a;
+				font-size: 1.1rem;
+				color: #b3b3b2;
+				font-weight: 500;
+			}
+		}
+	}
+}

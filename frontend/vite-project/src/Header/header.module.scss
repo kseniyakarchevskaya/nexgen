@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #0F0F0F;
+    font-family: "Roboto Flex", sans-serif;
+}
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    .headervn{
+        display: flex;
+        width: 95%;
+        background-color: #1A1A1A;
+        height: 10vh;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 1rem;
+        div{
+            background-color: #1A1A1A;
+            width: 45vw;
+            img{
+                width: 15%;
+                height: auto;
+                background-color: #1A1A1A;
+            }
+        }
+        
+        .but {
+            width: 40vw;
+            display: flex;
+            justify-content: space-between;
+             background-color: #1A1A1A;
+             align-items: center;
+            a {
+                list-style-type: none;
+                text-decoration: none;
+                color: #E7BEB1;
+                font-size: 1rem;
+                 background-color: #1A1A1A;
+                button {
+                    width: 7vw;
+                    height: 5vh;
+                    color: #0F0F0F;
+                    font-size: 0.9rem;
+                    border: none;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 0.8rem;
+                    background-color: #CE7D63;
+
+                }
+            }
+        }
+    }
+   
+}
